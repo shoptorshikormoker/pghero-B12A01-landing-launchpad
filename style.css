@@ -1,12 +1,18 @@
-.container{
+body{
+  background-color: #f5f6fa;
+}
+.container {
+
   width: 1140px;
   margin: 0 auto;
-  
+
 }
-.top-section{
+
+.top-section {
   background-image: url("Assets/Hero-bg.png");
 }
-header{
+
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,20 +33,49 @@ header{
   text-decoration: none;
   font-weight: bold;
 }
-.hero{
+
+.hero {
   padding-top: 158px;
   padding-bottom: 158px;
 }
-.section-title{
+
+.section-title {
   font-size: 65px;
   font-weight: bold;
-   text-align: center;
-      
+  text-align: center;
+
 }
 
-.hero-btn{
+.hero-btn {
   display: flex;
   justify-content: center;
-    align-items: center;
+  align-items: center;
 
+}
+
+.text {
+  font-weight: #2524325d;
+}
+.action-section{
+  display: flex;
+  justify-content: space-between;
+  padding: 8rem 0;
+
+}
+.action-section .action-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.action-section .action-left span{
+  font-size: 42px;
+  font-weight: bold;
+
+}
+.action-section .action-left p{
+  color:#2524327e;
+  font-size: 24px;
+}
+.action-section .action-right img{
+  border-radius: 48px;
 }
