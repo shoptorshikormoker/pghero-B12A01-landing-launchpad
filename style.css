@@ -2,6 +2,18 @@ body {
   background-color: #f5f6fa;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+  margin: 0px;
+  padding: 0px;
+}
+
 .container {
 
   width: 1140px;
@@ -192,110 +204,74 @@ header {
   color: #777;
 }
 
-.section {
-  padding: 40px 20px;
+.focus-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  gap: 20px;
+  padding: 71px 0;
 }
 
-.section-title {
+.focus-banner .title {
   font-size: 1.8rem;
-  margin-bottom: 10px;
   font-weight: bold;
   font-size: 50px;
+
 }
 
-.section-subtitle {
-  color: #555;
-  font-size: 0.9rem;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.highlight {
-  background-color: #eef2ff;
-  border-radius: 10px;
-}
-
-.banner-image {
-  margin-top: 20px;
+.focus-banner img {
   width: 100%;
   max-width: 800px;
-  border-radius: 10px;
-}
 
-.btn {
-  background: blue;
-  color: white;
-  padding: 8px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background: darkblue;
-}
-
-.banner-image {
-  width: 100%;
-  max-width: 800px;
-  margin-top: 15px;
   border-radius: 48px;
+  align-items: center;
 }
 
 .contact {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  text-align: left;
+  gap: 70px;
+  padding: 70px;
 }
 
-.contact-text {
-
-  flex: 1 1 200px;
-}
-
-.contact-text .section-title {
+.left {
+  width: 50%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 
-.section-title .action-left {
+.left span {
   font-weight: bold;
   font-size: 96px;
+
 }
 
-.form {
-  flex: 1 1 200px;
+.right {
+  display: flex;
   flex-direction: column;
+  width: 50%;
+  gap: 20px;
+
 }
 
-.form input,
-.form textarea {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
-  border: 1px solid lightgray;
-  border-radius: 4px;
+.right input {
+  font-size: 20px;
+  height: 70px;
+  border-radius: 10px;
+  padding: 0 32px;
+  border-color: #D6DDED;
+  outline: 0 !important;
+
+}
+.right input:focus{
+  outline: 0 !important;
+
 }
 
-.footer {
-  text-align: center;
-  padding: 15px;
-}
-
-.footer {
-  color: blue;
-  text-decoration: none;
-  margin: 0 5px;
-}
-
-
-.footer-text {
-  color: #8987A1;
-}
-
-.footer-links {
-  gap: 5px;
-  color: #8987A1;
+.right textarea {
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 20px 32px;
+  border-color: #D6DDED;
+  outline: none ;
 }
